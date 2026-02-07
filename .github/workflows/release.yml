@@ -57,7 +57,7 @@ jobs:
           npm version ${{ steps.version.outputs.clean_version }} --no-git-tag-version --allow-same-version
 
       - name: Build project
-        run: pnpm run build
+        run: npm install && pnpm run build
 
       - name: Prepare release package
         env:

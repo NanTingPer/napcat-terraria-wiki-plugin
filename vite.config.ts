@@ -24,3 +24,4 @@ export default defineConfig({
     },
     plugins: [nodeResolve()],
 });
+//"puppeteer": "^24.37.2"
