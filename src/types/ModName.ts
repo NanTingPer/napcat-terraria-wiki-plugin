@@ -1,0 +1,3 @@
+﻿enum ModName{
+    'Calamity' = 'Calamity'
+}

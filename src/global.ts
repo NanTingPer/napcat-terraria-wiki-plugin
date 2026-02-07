@@ -11,5 +11,7 @@ async function InitBrowser(filePath: string) {
 let global_config_schema: PluginConfigSchema = [];
 /** 配置值项 */
 let global_config_value: ConfigType = {};
-
-export { /** 全局浏览器 */ global_browser, InitBrowser, global_config_schema, global_config_value }
+let baseUrl: Map<ModName, string> = new Map();
+baseUrl
+    .set(ModName.Calamity, "https://calamity.huijiwiki.com/wiki/"); 
+export { /** 全局浏览器 */ global_browser, InitBrowser, global_config_schema, global_config_value, baseUrl }

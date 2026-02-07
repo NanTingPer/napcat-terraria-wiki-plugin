@@ -2,6 +2,7 @@
 import { NapCatPluginContext } from "napcat-types/napcat-onebot/network/plugin-manger";
 import { ConfigEnum } from '../types/index'
 import { existsSync, readFileSync } from 'fs'
+import { CalamityItemsIds } from "../ids";
 
 export class InitPlugin {
     private context: NapCatPluginContext;
@@ -26,6 +27,14 @@ export class InitPlugin {
             this.context.NapCatConfig.text(
                 ConfigEnum.ower_id,
                 "测试目标QQ号",
+                undefined,
+                undefined,
+                true
+            ),
+
+            this.context.NapCatConfig.text(
+                ConfigEnum.res_path,
+                "图片文件的存储路径",
                 undefined,
                 undefined,
                 true
@@ -57,6 +66,13 @@ export class InitPlugin {
         }
         this.context.logger.error("路径: " + browserPath);
         ib(browserPath);
+        return this;
+    }
+
+    public GetAllImage() : InitPlugin {
+        CalamityItemsIds.forEach(name => {
+            
+        });
         return this;
     }
 }
