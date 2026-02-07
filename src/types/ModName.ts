@@ -1,3 +1,3 @@
-﻿enum ModName{
+﻿export enum ModName{
     'Calamity' = 'Calamity'
 }

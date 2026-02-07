@@ -1,6 +1,7 @@
 ﻿import { PluginConfigSchema  } from "napcat-types/napcat-onebot/network/plugin-manger";
 import { MBrowser } from "./utils/MBrowser"
 import { ConfigType } from "./types/ConfigType";
+import { ModName } from "./types/ModName";
 let global_browser: MBrowser;
 
 async function InitBrowser(filePath: string) {

@@ -1,6 +1,7 @@
 ﻿import { OB11Message } from 'napcat-types';
 import type { NapCatPluginContext } from "napcat-types/napcat-onebot/network/plugin-manger";
 import { Send, Utils } from '../utils'
+import { ModName } from '../types/ModName';
 import { global_browser, global_config_value, baseUrl } from '../global';
 import * as fs from 'fs'
 import * as path from 'path'

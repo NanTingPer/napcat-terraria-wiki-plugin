@@ -1,12 +1,12 @@
 {
   "name": "napcat-plugin-terraria-wiki",
-  "id": "napcat-plugin-terraria-wiki",
+  "plugin": "泰拉瑞亚灾厄模组Wiki查询",
   "description": "从wiki截取页面",
   "author": "",
   "homepage": "https://github.com/NanTingPer/napcat-terraria-wiki-plugin",
   "private": false,
   "tags": ["工具"],
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
   "main": "index.mjs",
   "scripts": {
