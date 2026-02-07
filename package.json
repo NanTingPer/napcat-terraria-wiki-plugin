@@ -1,9 +1,14 @@
 {
-  "name": "napcat-terraria-wiki-plugin",
+  "name": "napcat-plugin-terraria-wiki",
+  "id": "napcat-plugin-terraria-wiki",
+  "description": "从wiki截取页面",
+  "author": "",
+  "homepage": "https://github.com/NanTingPer/napcat-terraria-wiki-plugin",
   "private": false,
+  "tags": ["工具"],
   "version": "0.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build && node copy.js",
