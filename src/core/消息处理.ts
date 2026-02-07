@@ -1,7 +1,7 @@
 ﻿import { OB11Message } from 'napcat-types';
 import type { NapCatPluginContext } from "napcat-types/napcat-onebot/network/plugin-manger";
-import { Send, Utils } from './utils'
-import { global_browser } from './global';
+import { Send, Utils } from '../utils'
+import { global_browser, global_config_schema } from '../global';
 
 async function onMessage (ctx : NapCatPluginContext, event : OB11Message){
     let send = new Send(ctx);

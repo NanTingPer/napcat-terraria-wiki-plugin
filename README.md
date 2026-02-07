@@ -1,6 +1,6 @@
 需要执行 `npm install puppeteer` 用于下载`puppeteer`所需的浏览器环境。
 
-其下载的浏览器位于`$home/.cache/puppeteer/chrome`，`.cache`目录默认被隐藏，需要使用` ls -la`。
+其下载的浏览器位于`$home/.cache/puppeteer/chrome`，`.cache`目录默认被隐藏，需要使用` ls -la` / `ls -a`。
 
 安装完成后使用`ldd chrome`查看是否有缺少运行库。如有，请安装。
 
