@@ -1,6 +1,6 @@
 ﻿import type { NapCatPluginContext } from "napcat-types/napcat-onebot/network/plugin-manger";
 import { OB11MessageDataType, type OB11PostSendMsg, type OB11MessageImage, OB11MessageTextSchema, OB11MessageText } from 'napcat-types/napcat-types/index';
-import { existsSync, readFileSync  } from 'fs'
+
 export class Send {
     private context : NapCatPluginContext;
     /**
@@ -76,20 +76,5 @@ export class Send {
             ? msg.group_id = String(target_id) 
             : msg.user_id = String(target_id);
         return msg;
-    }
-}
-
-export class Utils{
-    /**
-     * 
-     * @param filePath 文件路径
-     * @returns 文件不存在返回undefined 否则返回base64字符串 不包含url
-     */
-    public static FileToBase64(filePath: string) : string | undefined{
-        if(existsSync(filePath)){
-            return undefined;
-        }
-        let buffer: Buffer<ArrayBuffer> = readFileSync(filePath);
-        return buffer.toString('base64');
     }
 }
